@@ -105,12 +105,13 @@ body {
 
 .search_form {
     background: #1c8dd4;
-    width: 400px;
-    padding: 3px 15px;
-    border-radius: 33px;
+    width: 391px;
+    padding: 3px 10px;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .search_form .custom-search-control {
@@ -155,7 +156,7 @@ body {
 .sidebar-menu-area {
     min-width: 240px;
     max-width: 240px;
-    background: #151816;
+    background: #14171a;
     position: fixed;
     left: 0;
     top: 50px;
@@ -226,7 +227,7 @@ body {
 
 
 .sidebar-menu li a:hover {
-    color: #e8e8e8 !important;
+    color: #e2e2e2 !important;
 }
 
 .sidebar-menu li .treeview-menu {
