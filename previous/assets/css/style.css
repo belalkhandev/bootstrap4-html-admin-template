@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap');
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header-area {
+    background: #1da1f2;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header-logo {
+    width: 240px;
+    text-align: center;
+    background: #14171a24;
+    padding: 6px 0px;
+    position: relative;
+    left: 0;
+    transition: 0.25s linear;
+}
+
+.header-logo a {
+    text-decoration: none;
+}
+
+.header-logo a h3 {
+    color: #FFF;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.nav-bar {
+    position: absolute;
+    left: auto;
+    right: -30px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-nav {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-nav ul {
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.header-nav ul li a {
+    color: #FFF;
+}
+
+.header-form {
+    display: flex;
+    align-items: center;
+}
+
+.search_form {
+    background: #1c8dd4;
+    width: 391px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.search_form .custom-search-control {
+    background: none;
+    border: none;
+    width: calc(100% - 50px);
+    height: 30px;
+    outline: none;
+    color: #FFF;
+
+}
+
+.search_form .custom-search-control::placeholder {
+    color: #f6f6f6
+}
+
+.search-icon {
+    padding-top: 3px;
+    width: 25px;
+    font-size: 16px;
+    color: #F6F6F6;
+}
+
+.page-content-area {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    overflow: hidden;
+}
+
+.main-content-area {
+    width: 100%;
+    margin-left: 240px;
+    transition: 0.25s linear;
+}
+
+.sidebar-menu-area {
+    min-width: 240px;
+    max-width: 240px;
+    background: #14171a;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    height: 100%;
+    overflow-y: auto;
+    transition: 0.25s linear;
+}
+
+.no-header-logo {
+    left: -240px;
+    transition: 0.25s linear;
+}
+
+.no-sidebar .sidebar-menu-area {
+    min-width: 0px;
+    max-width: 0px;
+    left: -240px;
+    transition: 0.25s linear;
+}
+
+.no-sidebar .main-content-area {
+    margin-left: 0px;
+    transition: 0.25s linear;
+}
+.sidebar-menu li {
+    position: relative;
+    z-index: 1; 
+}
+
+.sidebar-menu li a {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    color: #8699ad;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-left: 3px solid transparent;
+    text-decoration: none;
+}
+
+.sidebar-menu li a i {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25px;
+    flex: 0 0 25px;
+    max-width: 25px;
+    width: 25px;
+    font-size: 16px;
+}
+
+.sidebar-menu li a span {
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100% - 30px);
+    flex: 0 0 calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    width: calc(100% - 30px);
+}
+
+
+.sidebar-menu li a:hover {
+    color: #e2e2e2 !important;
+}
+
+.sidebar-menu li .treeview-menu {
+    display: none;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.sidebar-menu li .treeview-menu .treeview-menu {
+    margin-left: 15px;
+}
+
+.sidebar-menu li .treeview-menu li a {
+    font-size: 14px;
+    color: #8699ad;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    z-index: 1;
+    padding-left: 10px;
+}
+
+.sidebar-menu li .treeview-menu li a:hover {
+    color: #8699ad;
+}
+
+.sidebar-menu>li>a:hover,
+.sidebar-menu>li.active>a,
+.sidebar-menu>li.menu-open>a {
+    color: #b4c9de;
+    background-color: #0d100e;
+    border-left: 3px solid #1c8dd4;
+}
+
+.sidebar-menu .treeview-menu>li.active>a {
+    color: #b4c9de;
+}
+
+.sidebar-menu a .fa-angle-right {
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    font-size: 15px;
+    position: absolute;
+    right: 15px;
+    width: auto;
+    z-index: auto;
+}
+
+.sidebar-menu .menu-open a .fa-angle-right {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.sidebar-menu .menu-open .treeview-menu a .fa-angle-right {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.sidebar-menu .menu-open .treeview-menu .menu-open a .fa-angle-right {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.sidebar-menu .menu-open .treeview-menu .treeview-menu a .fa-angle-right {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.sidebar-menu .menu-open .treeview-menu .treeview-menu .menu-open a .fa-angle-right {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.side-menu-area .sidebar-menu>li>a>span {
+    line-height: 1;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.sidebar-menu>.active>.treeview-menu {
+    display: block;
+}

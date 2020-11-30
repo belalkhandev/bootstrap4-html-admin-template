@@ -1,0 +1,49 @@
+.table {
+    tr {
+        th {
+            font-family: $heading;
+            font-weight: 600;
+            padding: 8px 10px;
+            border-bottom-width: 1px;
+        }
+
+        td {
+            font-size: 14px;
+            padding: 8px 10px;
+        }
+    }
+    
+    &.table-bordered {
+        thead {
+            background: #eeeeee;
+        }
+    }
+
+    &.table-striped {
+        thead {
+            background: $dark;
+            color: $light;
+        }
+    }
+
+    &.table-dark,
+    &.table-light,
+    &.table-success,
+    &.table-info,
+    &.table-primary,
+    &.table-danger,
+    &.table-warning
+     {
+        thead {
+            background: inherit;
+        }
+    }
+
+    &.table-hover {
+        tr {
+            td {
+                cursor: pointer;
+            }
+        }
+    }
+}
