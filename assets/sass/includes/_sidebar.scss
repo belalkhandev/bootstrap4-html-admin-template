@@ -1,4 +1,4 @@
-.sidebar-menu-area {
+.sidebar-area {
     min-width: 240px;
     max-width: 240px;
     background: $dark;
@@ -38,8 +38,6 @@
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
             align-items: center;
             width: 100%;
             padding: 10px;
@@ -50,34 +48,23 @@
             text-decoration: none;
     
             i {
-                -webkit-box-flex: 0;
-                -ms-flex: 0 0 25px;
-                flex: 0 0 25px;
                 max-width: 25px;
                 width: 25px;
-                font-size: 16px;
+                font-size: 0.875rem;
             }
     
             span {
-                -webkit-transition-duration: 300ms;
-                -o-transition-duration: 300ms;
                 transition-duration: 300ms;
-                -webkit-box-flex: 0;
-                -ms-flex: 0 0 calc(100% - 30px);
-                flex: 0 0 calc(100% - 30px);
                 max-width: calc(100% - 30px);
                 width: calc(100% - 30px);
+                font-size: 1rem;
             }
 
-            .fa-angle-right {
-                -webkit-transition-duration: 300ms;
-                -o-transition-duration: 300ms;
-                transition-duration: 300ms;
-                font-size: 15px;
-                position: absolute;
-                right: 15px;
+            i.bx.bx-chevron-down {
+                font-size: 18px;
+                transform: rotate(-180deg);
+                transition: 200ms;
                 width: auto;
-                z-index: auto;
             }
     
             &:hover {
@@ -87,9 +74,15 @@
 
         &.active, &.menu-open {
             a {
-                color: $secondary_light;
+                color: $primary;
                 background-color:$secondary_dark;
                 border-left: 3px solid $primary;
+
+
+                i.bx.bx-chevron-down {
+                    font-size: 18px;
+                    transform: rotate(0deg);
+                }
             }
         }
     
@@ -116,7 +109,7 @@
                     margin-right: 0;
                     position: relative;
                     z-index: 1;
-                    padding-left: 10px;
+                    padding: 7px 10px;
                     background: none;
                     border: none;
 

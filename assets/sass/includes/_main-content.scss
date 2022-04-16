@@ -1,4 +1,4 @@
-.main-content-area {
+.main-content {
     width: calc(100% - 240px);
     margin-left: 240px;
     transition: 300ms linear;
@@ -6,10 +6,11 @@
 }
 
 .page-info {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 
     .page-title {
         font-weight: 500;
+        font-size: 1.25rem;
     }
 
     .page-description {
