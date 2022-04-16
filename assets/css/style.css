@@ -212,7 +212,7 @@ h6 {
   width: calc(100% - 240px);
   margin-left: 240px;
   transition: 300ms linear;
-  padding: 15px 0px;
+  padding: 15px;
 }
 
 .page-info {
@@ -352,6 +352,8 @@ h6 {
   border-radius: 10px;
   padding: 0px 15px;
   overflow-y: auto;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.0509803922);
+  margin-bottom: 30px;
 }
 .box .box-header {
   border-bottom: 1px solid #CBD5E1;
