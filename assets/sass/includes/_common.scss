@@ -78,3 +78,26 @@ h6 {
         }
     }
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    display: block;
+}
+
+:hover::-webkit-scrollbar {
+    display: block;
+}
+ 
+::-webkit-scrollbar-track {    
+    width: 100%;
+    background: $gray_light;
+}
+ 
+::-webkit-scrollbar-thumb {
+    width: 100%;
+    background: $gray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+}
