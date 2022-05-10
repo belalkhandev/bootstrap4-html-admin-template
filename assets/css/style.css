@@ -624,8 +624,8 @@ h6 {
   opacity: 0;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
-  -webkit-transition: 350ms;
-  transition: 350ms;
+  -webkit-transition: 450ms ease-in-out;
+  transition: 450ms ease-in-out;
 }
 
 .widgets .widget .widget-header {
