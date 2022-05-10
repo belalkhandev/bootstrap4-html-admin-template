@@ -4,7 +4,7 @@
     jQuery(document).ready(function () {
         
         $(document).on('click', '.nav-bar', function() {
-            $('.page-content-area').toggleClass('no-sidebar');
+            $('.wrapper').toggleClass('no-sidebar');
             $('.header-logo').toggleClass('no-header-logo');
         });
     });
